@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starter</title>
+    <link rel="stylesheet" href="element-refs.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Element Reference</h1>
+        <section class="color-section">
+            <div class="palette">
+                <div class="primary-color"></div>
+                <div class="secondary-color"></div>
+                <div class="third-color"></div>
+            </div>
+            <div class="greys">
+                <div class="light-grey"></div>
+                <div class="mid-grey"></div>
+                <div class="dark-grey"></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="element-section">
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+        </section>
+
+        <hr>
+
+        <section class="element-section">
+            <h2>This is the Header Font</h2>
+            <p>This is the main font. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu venenatis dolor, eu rutrum magna. Donec mauris purus, bibendum quis lobortis et, <a href="#">this is a link</a>.</p>
+            <p><strong>This is bold text. Integer sed augue posuere, congue nunc eget, hendrerit sem.</strong></p>
+            <p><em>This is italic text. Sed commodo leo accumsan sed. Vestibulum consequat placerat nunc a porttitor. Duis pretium, eros vel dictum viverra, libero magna sagittis mi, ut lacinia diam velit eget felis.</em></p>
+            <p>This is inline code: <code>let Constructor = function('name') { this.name = name; }</code></p>
+            <code class="code-block">
+<pre>// This is a preformatted code block. 
+let Constructor = function('name') { 
+    this.name = name; 
+};</pre>
+</code>
+        </section>
+
+        <hr>
+
+        <section class="element-section">
+            <div>
+                <button class="btn--primary">Primary</button>
+                <button class="btn--primary-border">Primary</button>
+            </div>
+            <br>
+            <div>
+                <button class="btn--neutral">Neutral</button>
+                <button class="btn--neutral-border">Neutral</button>
+            </div>
+            <br>
+            <div>
+                <button class="btn--danger">Danger</button>
+                <button class="btn--danger-border">Danger</button>
+            </div>
+            <br>
+            <div>
+                <button class="btn--primary-disabled">Disabled</button>
+                <button class="btn--primary-border-disabled">Disabled</button>
+            </div>
+            <br>
+            <div>
+                <button class="btn--primary block-btn">Block</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="element-section">
+            <div class="form__item one-third">
+                <label for="">Text</label>
+                <input type="text" placeholder="This is a placeholder">
+            </div>
+            <div class="form__item one-third">
+                <label for="">Password</label>
+                <input placeholder="This is a placeholder" type="password">
+            </div>
+            <div class="form__item one-third">
+                <label for="">Email</label>
+                <input placeholder="This is a placeholder" type="email">
+            </div>
+            <div class="form__item-block">
+                <label for="">Textarea</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form__item">
+                <label for="">Error</label>
+                <input class="error-field" type="text" placeholder="This is a placeholder">
+            </div>
+            <div class="form__item-block">
+                <label for="">Select</label>
+                <select name="" id="">
+                    <option value=""> -- Select -- </option>
+                    <option value="lorem">Lorem ipsum dolor sit amet</option>
+                    <option value="ibsum">Ipsum</option>
+                    <option value="Dolor">Dolor</option>
+                    <option value="Amet">Amet</option>
+                </select>
+            </div>
+            <div class="form__item-block">
+                <label for="">Block Field</label>
+                <input class="block-field" type="text" placeholder="This is a placeholder">
+            </div>
+            <div class="form__item-block">
+                <label class="radio-label" for="radio1">
+                    <input type="radio" id="radio1" name="radio-fields"><span>Radio 1</span>
+                </label>
+                <label class="radio-label" for="radio2">
+                    <input type="radio" id="radio2" name="radio-fields"><span>Radio 2</span>
+                </label>
+                <label class="radio-label" for="radio3">
+                    <input type="radio" id="radio3" name="radio-fields"><span>Radio 3</span>
+                </label>
+            </div>
+            <div class="form__item-block">
+                <label class="checkbox-label" for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="checkbox-fields"><span>checkbox 1</span>
+                </label>
+                <label class="checkbox-label" for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="checkbox-fields"><span>checkbox 2</span>
+                </label>
+                <label class="checkbox-label" for="checkbox3">
+                    <input type="checkbox" id="checkbox3" name="checkbox-fields"><span>checkbox 3</span>
+                </label>
+            </div>
+            <div class="form__item-block">
+                <label class="file-label" for="file-upload">
+                    <input type="file" id="file-upload">
+                    <span>Upload File</span>
+                </label>
+                <label class="file-label--border" for="file-upload">
+                    <input type="file" id="file-upload">
+                    <span>Upload File</span>
+                </label>
+            </div>
+            <div class="form__item-block">
+                <input type="button" value="Main Button">
+                <input class="primary-border" type="button" value="Main Border Button">
+                <input class="secondary" type="button" value="Secondary Button">
+                <input class="secondary-border" type="button" value="Secondary Border Button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="element-section">
+            <img 
+                src="https://images.pexels.com/photos/1139556/pexels-photo-1139556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900" 
+                alt="demo picture" 
+                class="img-block"
+            >
+            <p>
+                <img 
+                    src="https://images.pexels.com/photos/1139556/pexels-photo-1139556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200" 
+                    alt="demo picture" 
+                    class="img-left"
+                >
+                Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis. Morbi sed pharetra risus, sit amet facilisis tortor. Ut porttitor, mauris eget malesuada faucibus, leo lorem auctor nunc, ac molestie neque ante et eros. Suspendisse potenti. Aliquam erat volutpat. Sed pretium, risus ac elementum gravida, purus odio elementum nibh, in porttitor ligula ligula ac nisl. Integer et auctor neque, a fringilla erat. Quisque non tortor lorem. Mauris viverra in lacus a consequat. Mauris semper augue sit amet est vehicula, nec porta ex tristique. In et enim massa. Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis. Morbi sed pharetra risus, sit amet facilisis tortor. Ut porttitor, mauris eget malesuada faucibus, leo lorem auctor nunc, ac molestie neque ante et eros. Suspendisse potenti. Aliquam erat volutpat. Sed pretium, risus ac elementum gravida, purus odio elementum nibh, in porttitor ligula ligula ac nisl. Quisque non tortor lorem. Mauris viverra in lacus a consequat. Mauris semper augue sit amet est vehicula, nec porta ex tristique. In et enim massa. Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis.
+            </p>
+            <p>
+                <img 
+                    src="https://images.pexels.com/photos/1139556/pexels-photo-1139556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200" 
+                    alt="demo picture" 
+                    class="img-right"
+                >
+                Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis. Morbi sed pharetra risus, sit amet facilisis tortor. Ut porttitor, mauris eget malesuada faucibus, leo lorem auctor nunc, ac molestie neque ante et eros. Suspendisse potenti. Aliquam erat volutpat. Sed pretium, risus ac elementum gravida, purus odio elementum nibh, in porttitor ligula ligula ac nisl. Integer et auctor neque, a fringilla erat. Quisque non tortor lorem. Mauris viverra in lacus a consequat. Mauris semper augue sit amet est vehicula, nec porta ex tristique. In et enim massa. Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis. Morbi sed pharetra risus, sit amet facilisis tortor. Ut porttitor, mauris eget malesuada faucibus, leo lorem auctor nunc, ac molestie neque ante et eros. Suspendisse potenti. Aliquam erat volutpat. Sed pretium, risus ac elementum gravida, purus odio elementum nibh, in porttitor ligula ligula ac nisl. Quisque non tortor lorem. Mauris viverra in lacus a consequat. Mauris semper augue sit amet est vehicula, nec porta ex tristique. In et enim massa. Aliquam mi magna, bibendum in faucibus id, blandit a metus. Suspendisse vulputate nunc vitae diam mollis, ut blandit risus iaculis.
+            </p>
+            <img 
+                src="https://images.pexels.com/photos/1139556/pexels-photo-1139556.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200" 
+                alt="demo picture" 
+                class="img-center"
+            >
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #555555;
+}
+
+.splash {
+  position: relative;
+  background: #dddddd;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.splash-scroll-down span {
+  display: inline-block;
+  margin: 0 0 15px;
+  cursor: pointer;
+}
+
+.splash .splash-content {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  margin: 0 auto;
+}
+.splash .splash-content div {
+  width: 47%;
+  margin: 0 1%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.splash .splash-content-left {
+  text-align: center;
+}
+.splash .splash-content-right {
+  text-align: left;
+}
+
+.splash-title {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.splash-tagline {
+  font-weight: normal;
+  font-size: 1.2em;
+  font-size: 1.2rem;
+}
+
+.splash-cta {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555555;
+  border: 2px solid #555555;
+  padding: 14px 24px;
+  display: inline-block;
+  margin: 20px auto 0;
+}
+
+/*# sourceMappingURL=splash.css.map */

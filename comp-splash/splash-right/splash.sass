@@ -1,0 +1,63 @@
+$themeColor: #dddddd
+$fontColor: #555555
+body
+    margin: 0
+    font-family: sans-serif
+    color: $fontColor
+
+.splash
+    position: relative
+    background: $themeColor
+    min-height: 90vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.splash-scroll-down
+    position: absolute
+    bottom: 0
+    width: 100%
+    text-align: center
+    span
+        display: inline-block
+        margin: 0 0 15px
+        cursor: pointer
+
+.splash
+    .splash-content
+        position: relative
+        display: flex
+        flex-direction: row-reverse
+        width: 90%
+        margin: 0 auto
+        div
+            width: 47%
+            margin: 0 1%
+            display: inline-block
+            box-sizing: border-box
+        &-left
+            text-align: center
+        &-right
+            text-align: left
+
+.splash-title
+    text-transform: uppercase
+    font-size: 2em
+    font-size: 2rem
+    margin-top: 0
+
+.splash-tagline
+    font-weight: normal
+    font-size: 1.2em
+    font-size: 1.2rem
+
+.splash-cta
+    text-transform: uppercase
+    text-decoration: none
+    color: $fontColor
+    border: 2px solid $fontColor
+    padding: 14px 24px
+    display: inline-block
+    margin: 20px auto 0
+    

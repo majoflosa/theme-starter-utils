@@ -1,0 +1,104 @@
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+//  GENERALS
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+=mainTransition($property: all, $duration: 0.25s, $timingFn: ease-in-out)
+    transition: $property $duration $timingFn
+    -webkit-transition: $property $duration $timingFn
+    -moz-transition: $property $duration $timingFn
+    -ms-transition: $property $duration $timingFn
+    -o-transition: $property $duration $timingFn
+
+=clearfix
+    display: block
+    content: " "
+    clear: both
+
+=mainFlex($justify: space-between, $align: center, $flexDirection: initial)
+    display: flex
+    justify-content: $justify
+    align-items: $align
+    flex-direction: $flexDirection
+
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+//  BUTTONS, CHECKBOX, RADIO, AND FILE INPUT
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+=btnGenerals
+    display: inline-block
+    padding: 8px 14px
+    text-transform: uppercase
+    border: 1px solid
+    cursor: pointer
+    font-size: inherit
+    +mainTransition
+    &:focus
+        outline: none
+    &:hover
+        text-decoration: none !important
+
+=mainBtn($color: $primaryColor, $radius: $boxRadius)
+    +btnGenerals
+    background: $color
+    color: #ffffff
+    border-color: $color
+    border-radius: $radius
+    &:hover
+        background: lighten($color, 10%)
+        border-color: lighten($color, 10%)
+
+=borderBtn($color: $primaryColor, $radius: $boxRadius)
+    +btnGenerals
+    background: transparent
+    color: $color
+    border-color: $color
+    border-radius: $radius
+    &:hover
+        background: $color
+        color: #ffffff
+
+
+=formSelectors($radius: $boxRadius)
+    display: inline-block
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    & + span::before
+        display: inline-block
+        vertical-align: middle
+        content: " "
+        width: 20px
+        height: 20px
+        margin-right: 8px
+        border-radius: $radius
+        border: 2px solid $midGrey
+    &:checked + span::before
+        background: $secondaryColor
+        border-color: $secondaryColor
+
+=fileInput($bg: $secondaryColor, $color: #ffffff, $border: $secondaryColor)
+    +btnGenerals
+    border-color: $border
+    border-radius: $boxRadius
+    background: $bg
+    color: $color
+    input[type="file"]
+        display: inline-block
+        width: 0.1px
+        height: 0.1px
+        opacity: 0
+    &:hover
+        background: lighten($bg, 10%)
+        border-color: lighten($bg, 10%)
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+//  MODALS
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+=outerModal($bg: #ffffff)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: scroll
+    box-sizing: border-box
+    background: $bg

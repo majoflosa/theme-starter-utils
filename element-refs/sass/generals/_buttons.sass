@@ -1,0 +1,47 @@
+.btn--primary, a.btn--primary
+    +mainBtn($primaryColor)
+.btn--primary-border, a.btn--primary-border
+    +borderBtn($primaryColor)
+
+.btn--white, a.btn--white
+    +mainBtn(#ffffff)
+    color: $primaryFontColor
+    &:hover
+        color: $primaryFontColor
+.btn--white-border, a.btn--white-border
+    +borderBtn(#ffffff)
+    &:hover
+        color: $primaryFontColor
+
+.btn--neutral, a.btn--neutral
+    +mainBtn($midGrey)
+.btn--neutral-border, a.btn--neutral-border
+    +borderBtn($midGrey)
+
+.btn--danger, a.btn--danger
+    +mainBtn($secondaryColor)
+.btn--danger-border, a.btn--danger-border
+    +borderBtn($secondaryColor)
+
+.btn--primary-disabled, a.btn--primary-disabled,
+.btn--neutral-disabled, a.btn--neutral-disabled,
+.btn--danger-disabled, a.btn--danger-disabled
+    +mainBtn(lighten($midGrey, 22%))
+    cursor: initial
+    &:hover
+        background: lighten($midGrey, 22%)
+        border-color: lighten($midGrey, 22%)
+.btn--primary-border-disabled, a.btn--primary-border-disabled,
+.btn--neutral-border-disabled, a.btn--neutral-border-disabled,
+.btn--danger-border-disabled, a.btn--danger-border-disabled
+    +borderBtn(lighten($midGrey, 22%))
+    cursor: initial
+    &:hover
+        background: transparent
+        color: lighten($midGrey, 22%)
+
+.block-btn, a.block-btn
+    display: block
+    text-align: center
+    width: 100%
+    box-sizing: border-box
