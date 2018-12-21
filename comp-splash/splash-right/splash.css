@@ -69,4 +69,20 @@ body {
   margin: 20px auto 0;
 }
 
+@media screen and (max-width: 960px) {
+  .splash-scroll-down {
+    display: none;
+  }
+
+  .splash .splash-content {
+    display: block;
+  }
+  .splash .splash-content-left, .splash .splash-content-right, .splash .splash-content > div {
+    display: block;
+    width: auto;
+    max-width: none;
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=splash.css.map */
