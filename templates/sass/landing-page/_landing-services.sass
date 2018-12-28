@@ -1,0 +1,26 @@
+.landing-services
+    &-list
+        +mainFlex(center)
+        flex-wrap: wrap
+
+    &-item
+        background: $lightGrey
+        padding: 30px
+        box-sizing: border-box
+        text-align: center
+        margin: 1%
+        flex: 0 0 31%
+
+@media screen and (max-width: 960px)
+    .landing-services
+        &-item
+            flex: 0 0 48%
+
+@media screen and (max-width: 600px)
+    .landing-services
+        &-list
+            display: block
+        &-item
+            display: block
+            width: auto
+    

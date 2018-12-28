@@ -1,0 +1,30 @@
+.landing-articles
+    &-list
+        +mainFlex(center)
+        flex-wrap: wrap
+
+    &-item
+        box-sizing: border-box
+        background: $lightGrey
+        margin: 1%
+        flex: 0 0 23%
+        padding: 15px
+
+@media screen and (max-width: 960px)
+    .landing-articles
+        &-list
+            justify-content: flex-start
+        &-item
+            flex: 0 0 31%
+
+@media screen and (max-width: 720px)
+    .landing-articles
+        &-item
+            flex: 0 0 48%
+
+@media screen and (max-width: 540px)
+    .landing-articles
+        &-list
+            display: block
+        &-item
+            display: block

@@ -1,0 +1,46 @@
+body
+    margin: 0
+    font-family: $primaryFont
+    color: $primaryFontColor
+
+h1, h2, h3, h4, h5, h6
+    font-family: $headerFont
+
+a, a:active, a:visited
+    color: $secondaryColor
+    text-decoration: none
+    +mainTransition
+a:hover
+    text-decoration: underline
+    color: $lightSecondaryColor
+
+code
+    background: $lightGrey
+    color: darken($midGrey, 15%)
+    padding: 8px 14px
+    border: $boxRadius
+.code-block
+    display: block
+
+img
+    display: block
+    max-width: 100%
+.img-block
+    width: 100%
+.img-left
+    float: left
+    margin: 0 20px 20px 0
+.img-right
+    float: right
+    margin: 0 0 20px 20px
+.img-center
+    display: block
+    margin: 0 auto
+// figure, figcaption
+
+// blockquote
+
+// definitions
+
+.modal-wrap
+    +outerModal

@@ -1,0 +1,45 @@
+$gridItemHeight: 120px
+    
+.landing-clients
+    &.landing-section
+        .landing-section-inner
+            max-width: none
+    
+    &-list
+        text-align: center
+        +mainFlex(center, initial)
+
+    &-item
+        +mainFlex(center, center)
+        box-sizing: border-box
+        padding: 20px
+        margin: 3px
+        background: $lightGrey
+
+        img
+            display: block
+            max-width: 100%
+            margin: 0 auto
+
+
+@media screen and (max-width: 1024px)
+    .landing-clients
+        &-list
+            flex-wrap: wrap
+        &-item
+            flex: 1 0 32%
+
+
+@media screen and (max-width: 600px)
+    .landing-clients
+        &-item
+            flex: 0 0 48%
+
+@media screen and (max-width: 380px)
+    .landing-clients
+        &-list
+            display: block
+
+        &-item
+            display: block
+

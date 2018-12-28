@@ -1,0 +1,44 @@
+.main-nav
+    position: fixed
+    z-index: 3
+    top: 0
+    left: 0
+    width: 100%
+    background: $primaryColor
+    padding: 30px
+    box-sizing: border-box
+    +mainFlex
+    +mainTransition
+
+    &.sticky
+        padding-top: 20px
+        padding-bottom: 20px
+        background: rgba($primaryColor, 0.95)
+
+    &-link
+        display: inline-block
+        margin: 0 8px
+        color: #ffffff
+        &:hover
+            text-decoration: none
+            color: darken(#ffffff, 10%)
+
+.menu-button
+    /* Customize your menu button */
+    display: none
+    padding: 8px 12px
+    background: #ffffff
+    text-transform: uppercase
+
+
+    
+@media screen and (max-width: 960px)
+    .main-nav
+        position: initial
+    .menu-button
+        display: inline-block
+    .main-nav-links
+        display: none
+        &.open
+            display: block
+

@@ -1,0 +1,34 @@
+.landing-testimonials
+    &-list
+
+    &-item
+        +mainFlex(center, flex-start)
+        &-author
+            flex: 0 0 25%
+            img
+                display: block
+                width: 100px
+                margin: 0 auto
+                border-radius: 99px
+        &-content
+            p
+                margin-top: 0
+                font-size: 1.2em
+                font-size: 1.2rem
+            .signature
+                text-align: right
+                em
+                    color: lighten($primaryFontColor, 10%)
+                    font-size: 0.9em
+
+
+@media screen and (max-width: 720px)
+    .landing-testimonials
+        &-item
+            display: block
+            &-author
+                display: block
+                margin: 0 0 15px
+            &-content
+                .signature
+                    text-align: left

@@ -1,0 +1,91 @@
+.form__item
+    display: inline-block
+    margin: 0 10px 20px 0
+
+.form__item-block
+    display: block
+    margin: 0 10px 20px 0
+
+label
+    display: block
+    margin: 0 0 5px
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="search"], 
+input[type="date"], 
+input[type="url"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="datetime-local"], 
+input[type="time"], 
+input[type="week"], 
+textarea,
+select
+    display: block
+    padding: 8px 12px 
+    border-radius: $boxRadius
+    border: 1px solid $midGrey
+    color: inherit
+    font-family: inherit
+    font-size: inherit
+    +mainTransition
+    &.block-field
+        display: block
+        width: 100%
+        box-sizing: border-box
+    &:focus
+        outline: none
+        border-color: $primaryColor
+    &.error-field
+        border-color: $secondaryColor
+    &::placeholder
+        color: lighten($midGrey, 15%)
+
+textarea
+    width: 100%
+    box-sizing: border-box
+
+select
+    height: 2.25em
+    width: 100%
+    box-sizing: border-box
+    background: #ffffff
+
+.radio-label
+    display: inline-block
+    cursor: pointer
+    input[type="radio"]
+        +formSelectors(50%)
+
+.checkbox-label
+    display: inline-block
+    cursor: pointer
+    input[type="checkbox"]
+        +formSelectors
+
+.file-label
+    +fileInput
+
+.file-label--border
+    +fileInput(transparent, $secondaryColor)
+    &:hover
+        background: $secondaryColor
+        border-color: $secondaryColor
+        color: #ffffff
+
+input[type="button"], input[type="submit"]
+    +mainBtn
+
+input[type="button"].primary-border
+    +borderBtn($primaryColor)
+
+input[type="button"].secondary
+    +mainBtn($secondaryColor)
+
+input[type="button"].secondary-border
+    +borderBtn($secondaryColor)
+
+input[type="reset"]
+    +borderBtn($midGrey)

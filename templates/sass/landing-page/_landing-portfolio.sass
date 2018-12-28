@@ -1,0 +1,25 @@
+.landing-portfolio
+    &-list
+        +mainFlex(flex-start)
+        flex-wrap: wrap
+
+    &-item
+        background: $lightGrey
+        flex: 0 0 32%
+        margin: 5px 0.5%
+
+        .portfolio-img
+            display: block
+            
+
+@media screen and (max-width: 720px)
+    .landing-portfolio
+        &-item
+            flex: 0 0 49%
+
+@media screen and (max-width: 480px)
+    .landing-portfolio
+        &-list
+            display: block
+        &-item
+            display: block
