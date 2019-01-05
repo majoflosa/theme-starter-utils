@@ -2,6 +2,40 @@
     +mainBtn($primaryColor)
 .btn--primary-border, a.btn--primary-border
     +borderBtn($primaryColor)
+.btn--primary-dark, a.btn--primary-dark
+    +mainBtn($darkPrimaryColor)
+.btn--primary-dark-border, a.btn--primary-dark-border
+    +borderBtn($darkPrimaryColor)
+.btn--primary-light, a.btn--primary-light
+    +mainBtn($lightPrimaryColor)
+.btn--primary-light-border, a.btn--primary-light-border
+    +borderBtn($lightPrimaryColor)
+
+.btn--secondary, a.btn--secondary
+    +mainBtn($secondaryColor)
+.btn--secondary-border, a.btn--secondary-border
+    +borderBtn($secondaryColor)
+.btn--secondary-dark, a.btn--secondary-dark
+    +mainBtn($darkSecondaryColor)
+.btn--secondary-dark-border, a.btn--secondary-dark-border
+    +borderBtn($darkSecondaryColor)
+.btn--secondary-light, a.btn--secondary-light
+    +mainBtn($lightSecondaryColor)
+.btn--secondary-light-border, a.btn--secondary-light-border
+    +borderBtn($lightSecondaryColor)
+
+.btn--third, a.btn--third
+    +mainBtn($thirdColor)
+.btn--third-border, a.btn--third-border
+    +borderBtn($thirdColor)
+.btn--third-dark, a.btn--third-dark
+    +mainBtn($darkThirdColor)
+.btn--third-dark-border, a.btn--third-dark-border
+    +borderBtn($darkThirdColor)
+.btn--third-light, a.btn--third-light
+    +mainBtn($lightThirdColor)
+.btn--third-light-border, a.btn--third-light-border
+    +borderBtn($lightThirdColor)
 
 .btn--white, a.btn--white
     +mainBtn(#ffffff)
@@ -24,16 +58,67 @@
     +borderBtn($secondaryColor)
 
 .btn--primary-disabled, a.btn--primary-disabled,
+.btn--primary:disabled, a.btn--primary:disabled
+    +mainBtn(lighten($primaryColor, 22%))
+    cursor: initial
+    &:hover
+        background: lighten($primaryColor, 22%)
+        border-color: lighten($primaryColor, 22%)
+
+.btn--secondary-disabled, a.btn--secondary-disabled,
+.btn--secondary:disabled, a.btn--secondary:disabled
+    +mainBtn(lighten($secondaryColor, 22%))
+    cursor: initial
+    &:hover
+        background: lighten($secondaryColor, 22%)
+        border-color: lighten($secondaryColor, 22%)
+
+.btn--third-disabled, a.btn--third-disabled,
+.btn--third:disabled, a.btn--third:disabled
+    +mainBtn(lighten($thirdColor, 22%))
+    cursor: initial
+    &:hover
+        background: lighten($thirdColor, 22%)
+        border-color: lighten($thirdColor, 22%)
+
 .btn--neutral-disabled, a.btn--neutral-disabled,
-.btn--danger-disabled, a.btn--danger-disabled
+.btn--neutral:disabled, a.btn--neutral:disabled,
+.btn--danger-disabled, a.btn--danger-disabled,
+.btn--danger:disabled, a.btn--danger:disabled
     +mainBtn(lighten($midGrey, 22%))
     cursor: initial
     &:hover
         background: lighten($midGrey, 22%)
         border-color: lighten($midGrey, 22%)
+
 .btn--primary-border-disabled, a.btn--primary-border-disabled,
+.btn--primary-border:disabled, a.btn--primary-border:disabled
+    +borderBtn(lighten($primaryColor, 22%))
+    cursor: initial
+    &:hover
+        background: transparent
+        color: lighten($primaryColor, 22%)
+
+.btn--secondary-border-disabled, a.btn--secondary-border-disabled,
+.btn--secondary-border:disabled, a.btn--secondary-border:disabled
+    +borderBtn(lighten($secondaryColor, 22%))
+    cursor: initial
+    &:hover
+        background: transparent
+        color: lighten($secondaryColor, 22%)
+
+.btn--third-border-disabled, a.btn--third-border-disabled,
+.btn--third-border:disabled, a.btn--third-border:disabled
+    +borderBtn(lighten($thirdColor, 22%))
+    cursor: initial
+    &:hover
+        background: transparent
+        color: lighten($thirdColor, 22%)
+
 .btn--neutral-border-disabled, a.btn--neutral-border-disabled,
-.btn--danger-border-disabled, a.btn--danger-border-disabled
+.btn--neutral-border:disabled, a.btn--neutral-border:disabled,
+.btn--danger-border-disabled, a.btn--danger-border-disabled,
+.btn--danger-border:disabled, a.btn--danger-border:disabled
     +borderBtn(lighten($midGrey, 22%))
     cursor: initial
     &:hover
