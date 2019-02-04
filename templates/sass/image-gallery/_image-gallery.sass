@@ -1,0 +1,47 @@
+.image-gallery
+    +mainFlex(flex-start)
+    flex-wrap: wrap
+
+    &-item
+        background: $lightGrey
+        flex: 0 0 32%
+        margin: 5px 0.5%
+        overflow: hidden
+        position: relative
+        border-radius: $boxRadius
+
+        &-overlay
+            opacity: 0
+            position: absolute
+            height: 100%
+            width: 100%
+            +mainFlex(center)
+            background: rgba($primaryColor, 0.75)
+            z-index: 2
+            +mainTransition
+
+        &-img
+            display: block
+            +mainTransition(all, 0.35s)
+
+        &:hover
+            .image-gallery-item-img
+                transform: scale(1.1)
+            .image-gallery-item-overlay
+                display: flex
+                opacity: 1
+
+            
+
+@media screen and (max-width: 720px)
+    .image-gallery
+        &-item
+            flex: 0 0 49%
+
+@media screen and (max-width: 480px)
+    .image-gallery
+        display: block
+        
+        &-item
+            display: block
+            margin-bottom: 30px
